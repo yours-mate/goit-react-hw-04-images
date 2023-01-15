@@ -21,6 +21,7 @@ export class App extends Component {
   };
 
   onFormSubmit = query => {
+    console.log('a');
     this.setState({ query, page: 1 });
   };
 
