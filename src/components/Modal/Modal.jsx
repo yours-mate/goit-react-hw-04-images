@@ -16,7 +16,7 @@ export function Modal({ handleModal, children }) {
     return () => {
       window.removeEventListener('keydown', handleOpenedModal);
     };
-  }, []);
+  }, [handleModal]);
 
   return createPortal(
     <div className={css.overlay} onClick={handleModal}>
